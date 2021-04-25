@@ -1,8 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://cabShare:9835402405@cluster0.xnv3j.mongodb.net/<dbname>?retryWrites=true&w=majority",
-
-  "jwtSecret": "CabShare_driver_rider",
-  "Email_Id": "cabshare449@gmail.com",
-  "Password": "rahul2603",
-  "Origin": "http://localhost:3000"
-}
