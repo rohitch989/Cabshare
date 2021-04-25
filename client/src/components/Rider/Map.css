@@ -1,0 +1,121 @@
+/* Notification */
+.notif-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem auto;
+  height: 4rem;
+  width: 100%;
+  cursor: pointer;
+}
+.notif-btn h1 {
+  font-size: 2rem;
+  color: white;
+}
+.notif-heading {
+  padding: 0.4rem 0;
+  text-transform: capitalize;
+  color: wheat;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.notif-heading:hover {
+  border: 1px solid wheat;
+  text-shadow: 0.4rem 0.4rem 0.8rem lightcoral,
+    -0.4rem -0.4rem 0.8rem lightcoral;
+  box-shadow: 0.4rem 0.4rem 0.8rem lightcoral, -0.4rem -0.4rem 0.8rem lightcoral;
+}
+
+.notif-btn .fa-bell {
+  font-size: 4rem;
+  color: green;
+}
+.notif-btn .fa-bell-slash {
+  font-size: 4rem;
+  color: lightgray;
+}
+
+/* Map */
+.react-geocoder {
+  position: absolute;
+  top: 13rem;
+  left: 4rem;
+  font-size: 1.5rem;
+}
+
+.react-geocoder input {
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+.pin {
+  width: 5rem;
+  height: 5rem;
+}
+.fa-map-marker {
+  font-size: 3rem;
+}
+.driver-name {
+  margin: 3rem auto;
+  color: white;
+  font-size: 2rem;
+}
+.request-btn-tooltip {
+  position: relative;
+}
+.request-btn-tooltip::after,
+.request-btn-tooltip::before {
+  --scale: 0;
+  --arrow-size: 0;
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom;
+}
+.request-btn-tooltip::before {
+  --translate-y: -100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  width: max-content;
+  color: var(--danger-color);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  content: attr(data-tooltip);
+}
+.request-btn-tooltip:focus {
+  outline: none;
+  margin-top: 4rem;
+}
+.request-btn-tooltip:focus::before,
+.request-btn-tooltip:focus::after {
+  --scale: 1;
+  --arrow-size: 1;
+}
+
+.request-btn-tooltip::after {
+  content: '';
+  top: -30%;
+  border: 10px solid transparent;
+  border-top-color: black;
+  transform: scale(--arrow-size);
+}
+.notif-modal-span {
+  color: var(--white-color);
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  font-style: oblique;
+}

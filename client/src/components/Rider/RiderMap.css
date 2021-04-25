@@ -1,0 +1,667 @@
+.Riderinfo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+/* Left Side-Bar */
+.left-sidebar {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/Shooting.gif);
+  z-index: 0;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  border-right: 0.3rem solid var(--grey-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.personal-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+
+.personal-section .left-close {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.4s transform, 0.4s color;
+}
+.personal-section .left-close:hover {
+  transform: scale(2);
+  color: crimson;
+}
+.personal-header {
+  font-size: 2rem;
+  margin: 5rem 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--grey-color);
+  color: whitesmoke;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+.personal-section .name {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  width: 80%;
+  height: 5rem;
+  margin: auto;
+  display: flex;
+  margin-top: 3rem;
+}
+.profile {
+  width: 6rem;
+  height: 100%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  margin-right: 0.6rem;
+}
+.personal-section .name h1 {
+  margin: auto;
+  font-style: italic;
+}
+
+.status {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem auto;
+  width: 75%;
+}
+.status .green {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  border-radius: 50%;
+  margin: auto 0.8rem;
+  border: 4px solid green;
+}
+.status .red {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: crimson;
+  border-radius: 50%;
+  margin: auto 0.8rem;
+  border: 4px solid crimson;
+}
+.status-span {
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+  margin: auto 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.status-label {
+  font-size: 2rem;
+  color: white;
+  margin: auto 0.4rem;
+}
+.id {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem auto;
+}
+.id .id-label {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
+}
+.id .id-email {
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+  margin: auto;
+}
+
+.Date-span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem auto;
+}
+.Date-span .Date-label {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
+}
+.date {
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+  margin: auto;
+}
+/* Add Request */
+.request-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.request-btn button {
+  border: 1px solid wheat;
+  background-color: transparent;
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.5rem;
+  color: #fff;
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.request-btn button .fa-plus {
+  color: lightgreen;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.request-btn button .fa-minus {
+  color: crimson;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.request-btn button:hover {
+  box-shadow: 0.8rem 0.8rem 1rem wheat, -0.8rem -0.8rem 1rem wheat;
+  text-shadow: 0.8rem 0.8rem 1rem wheat, -0.8rem -0.8rem 1rem wheat;
+}
+
+/* Modal */
+.request-box {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+}
+.modal-box {
+  width: 40%;
+  min-width: 40rem;
+  height: auto;
+  background-color: white;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: darkcyan;
+  position: relative;
+}
+.modal-container {
+  padding-top: 3rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  margin: 0 2rem 2rem 2rem;
+  width: 100%;
+  height: 100%;
+}
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  border-bottom: 2px solid coral;
+}
+.modal-header h1 {
+  font-size: 3rem;
+  font-style: italic;
+  color: lightblue;
+}
+.modal-header span {
+  display: inline-block;
+  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  color: red;
+  cursor: pointer;
+  transition: 0.5s color, 0.5s transform;
+}
+.modal-header span:hover {
+  color: black;
+  transform: scale(2);
+}
+.form-label {
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  text-align: left;
+}
+.form-control {
+  width: 50%;
+  text-align: center;
+}
+.modal-span {
+  margin: 1.2rem;
+}
+.form-geocoder {
+  position: relative;
+  margin: 1.5rem 0.5rem;
+}
+.form-geocoder .react-geocoder {
+  position: absolute;
+  width: 48%;
+  top: 0;
+  left: 50%;
+}
+.form-geocoder .react-geocoder input {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+}
+.form-geocoder .react-geocoder input:focus {
+  border: none;
+  outline: none;
+}
+.form-geocoder .react-geocoder-results {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.request-form-btn {
+  margin: 3rem auto;
+  display: inline-block;
+  background: var(--primary-color);
+  border: 1px solid white;
+  padding: 0.8rem 1rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem var(--grey-color);
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.request-form-btn:hover {
+  color: blueviolet;
+  box-shadow: 0.8rem 0.8rem 1rem white, -0.8rem -0.8rem 1rem white;
+}
+
+/* Search-btn */
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.search-btn .fa-search-plus {
+  color: lightslategray;
+  margin-right: 0.8rem;
+  font-size: 2rem;
+}
+.search-btn button {
+  border: 1px solid lightskyblue;
+  background-color: transparent;
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.5rem;
+  color: lightsalmon;
+  font-style: italic;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.search-btn button:hover {
+  box-shadow: 0.8rem 0.8rem 1rem lightskyblue, -0.8rem -0.8rem 1rem lightskyblue;
+  text-shadow: 0.8rem 0.8rem 1rem lightskyblue,
+    -0.8rem -0.8rem 1rem lightskyblue;
+}
+/* log-Out */
+.log-button {
+  background-color: teal;
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.log-button:hover {
+  background-color: var(--danger-color);
+  box-shadow: 0.8rem 0.8rem 1rem lightskyblue, -0.8rem -0.8rem 1rem lightskyblue;
+  text-shadow: 0.8rem 0.8rem 1rem lightskyblue,
+    -0.8rem -0.8rem 1rem lightskyblue;
+}
+.log {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* right-Sidebar */
+.right-sidebar {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/Shooting.gif);
+  z-index: 0;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  border-left: 0.5rem solid var(--grey-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.right-sidebar .right-section {
+  margin-top: 5rem;
+  position: relative;
+}
+.right-section .right-close {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.4s transform, 0.4s color;
+}
+.right-section .right-close:hover {
+  transform: scale(2);
+  color: red;
+}
+.request-header {
+  font-size: 2rem;
+  color: lightblue;
+  font-style: italic;
+  background-color: transparent;
+  display: inline-block;
+  border-bottom: 2px solid grey;
+}
+.request-On {
+  width: 100%;
+}
+.request-On h1 {
+  margin: 1rem auto;
+  color: lightgreen;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0.8rem 1rem;
+  border-bottom: 2px dashed wheat;
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+}
+/* Table */
+.on-table {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 0.2rem;
+  margin: auto;
+}
+.on-table div {
+  width: 100%;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  color: white;
+}
+.on-table div:nth-child(1),
+.on-table div:nth-child(2),
+.on-table div:nth-child(3),
+.on-table div:nth-child(4) {
+  border-bottom: 2px solid lightslategray;
+  padding-bottom: 0;
+}
+
+.off-going {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
+  font-style: oblique;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0 2rem 0;
+}
+/* new Request */
+.new-request h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid lightcoral;
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  transition: 0.5s all;
+  margin: 1rem auto;
+}
+.new-request h1:hover {
+  border-radius: 0.5rem;
+  border: 1px solid lightcoral;
+  text-shadow: 0.4rem 0.4rem 0.8rem lightcoral,
+    -0.4rem -0.4rem 0.8rem lightcoral;
+  box-shadow: 0.4rem 0.4rem 0.8rem lightcoral, -0.4rem -0.4rem 0.8rem lightcoral;
+}
+.new-grid {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 5rem);
+
+  margin: auto;
+}
+.new-grid div {
+  width: 100%;
+  margin: 0.1rem;
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.new-grid div:nth-child(1),
+.new-grid div:nth-child(2),
+.new-grid div:nth-child(3),
+.new-grid div:nth-child(4),
+.new-grid div:nth-child(5) {
+  border-bottom: 2px solid lightslategray;
+  padding-bottom: 0;
+}
+/* past Request */
+.past-request h1 {
+  margin: 1rem auto;
+
+  color: var(--danger-color);
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid lightskyblue;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.past-request h1:hover {
+  border-radius: 0.5rem;
+
+  border: 1px solid lightskyblue;
+  text-shadow: 0.4rem 0.4rem 0.8rem lightskyblue,
+    -0.4rem -0.4rem 0.8rem lightskyblue;
+  box-shadow: 0.4rem 0.4rem 0.8rem lightskyblue,
+    -0.4rem -0.4rem 0.8rem lightskyblue;
+}
+.req-btn {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: red;
+  border-radius: 0.5rem;
+}
+
+/* Map */
+.Map {
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: 0;
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.point-1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgb(0, 21, 255);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: pulse 1.5s 0.3s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 21, 255, 0.7), 0 0 0 0 rgba(0, 21, 255, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 2rem rgba(0, 21, 255, 0.2),
+      0 0 0 2rem rgba(0, 21, 255, 0.2);
+  }
+  80% {
+    box-shadow: 0 0 0 4rem rgba(0, 21, 255, 0.3),
+      0 0 0 4rem rgba(0, 21, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5rem rgba(0, 21, 255, 0), 0 0 0 5rem rgba(0, 21, 255, 0.3);
+  }
+}
+
+.pulse-red {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--danger-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: animate-red 1s 0.5s ease-in infinite;
+}
+@keyframes animate-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 55, 0, 0.898), 0 0 0 0 rgba(255, 55, 0, 0.898);
+  }
+  40% {
+    box-shadow: 0 0 0 2rem rgba(255, 55, 0, 0.2),
+      0 0 0 2rem rgba(255, 55, 0, 0.2);
+  }
+  80% {
+    box-shadow: 0 0 0 4rem rgba(255, 55, 0, 0.3),
+      0 0 0 4rem rgba(255, 55, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5rem rgba(255, 55, 0, 0), 0 0 0 5rem rgba(255, 55, 0, 0);
+  }
+}
+.map-footer {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 4rem;
+  z-index: 15;
+  background-color: white;
+}
+
+.footer-grid {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: auto;
+}
+
+.footer-grid div {
+  margin: 0.1rem;
+  font-size: 1.5rem;
+  color: var(--grey-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.footer-grid div .fa-plus {
+  font-size: 2rem;
+  color: lightgreen;
+  margin: auto 0.5rem;
+}
+.footer-grid div .fa-search-plus {
+  font-size: 2rem;
+  color: lightslategray;
+  margin: auto 0.5rem;
+}
+.footer-grid div .fa-user-alt {
+  font-size: 2rem;
+  color: blue;
+  margin: auto 0.5rem;
+}
+.footer-notification i {
+  margin: auto 0.4rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}

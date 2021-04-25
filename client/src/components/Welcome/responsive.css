@@ -1,0 +1,384 @@
+@media only screen and (max-width: 1320px) {
+  .header-content .header-heading {
+    font-size: 5rem;
+  }
+  .header-content {
+    top: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .header-content .header-paragraph {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .about-content {
+    width: 80%;
+  }
+  .heading {
+    font-size: 4rem;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 878px) {
+  .about-content {
+    font-size: 1.7rem;
+  }
+  .heading {
+    font-size: 4rem;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .driver-h1 {
+    font-size: 4.2;
+  }
+  .driver-paragraph {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .header-content .header-heading {
+    font-size: 4rem;
+  }
+  .header-content {
+    left: 5%;
+    right: 5%;
+  }
+  .header-content {
+    top: 40%;
+  }
+  .rider-h1 {
+    font-size: 5.2rem;
+  }
+  .rider-paragraph {
+    font-size: 3.2rem;
+  }
+  .header-content .header-paragraph {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .rider-background {
+    height: 150vh;
+  }
+
+  .form-container {
+    left: 7%;
+  }
+  .header-content .header-heading {
+    font-size: 3.5rem;
+  }
+  .form-group {
+    margin: 2rem auto !important;
+  }
+  .about-content {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 5rem auto;
+    margin-bottom: 0;
+  }
+  .driver-content {
+    width: 80%;
+    left: 0;
+    right: 0;
+  }
+
+  .section-2 {
+    height: 130vh;
+  }
+  .about-content-paragraph {
+    margin: 0.5rem auto;
+    letter-spacing: 0.2rem;
+  }
+  .heading {
+    font-size: 3.5rem;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .header-content {
+    left: 5%;
+    right: 5%;
+  }
+  .header-content {
+    top: 40%;
+    overflow: none;
+  }
+  .header-content .header-paragraph {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  .about-content-paragraph p::first-letter {
+    font-size: 2.5rem;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  /* Welcome Rider */
+  .rider-h1 {
+    font-size: 4.7rem;
+  }
+  .rider-paragraph {
+    font-size: 2.8rem;
+  }
+  .form-container-h1 {
+    font-size: 3.4rem;
+  }
+  .rider-login label {
+    font-size: 2.6rem;
+  }
+  .login-submit {
+    font-size: 2.8rem;
+  }
+  .rider-form {
+    bottom: 60% !important;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .about-content-paragraph {
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin: 0.5rem auto;
+    line-height: 2.5rem;
+  }
+  .section-2 {
+    height: 120vh;
+  }
+  .form-group .confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .form-group #confirmpassword {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .header-content .header-paragraph {
+    display: inline-block;
+    line-height: 2.5rem;
+  }
+  .heading {
+    font-size: 2.95rem;
+  }
+  .about-content-paragraph p::first-letter {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .rider-background {
+    height: 150vh !important;
+  }
+  .heading {
+    font-size: 2.55rem;
+  }
+  .about-content-paragraph {
+    margin: 1rem auto;
+  }
+  .about-content-paragraph p {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .about-content-paragraph p::first-letter {
+    font-size: 3rem;
+  }
+  .section-2 {
+    height: auto;
+  }
+  .rider-span {
+    top: 12rem;
+  }
+  .form-group label {
+    font-size: 2rem !important;
+  }
+  .form-container {
+    width: 100% !important;
+    height: 29rem;
+  }
+  .rider-form {
+    width: 90%;
+    left: 4% !important;
+    right: 15% !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo-driver span {
+    font-size: 1.5rem !important;
+  }
+  .logo-driver span:nth-child(1) {
+    font-size: 3.5rem !important;
+  }
+
+  .logo-driver span:nth-child(4) {
+    font-size: 4.5rem !important;
+  }
+  .heading {
+    font-size: 2.3rem;
+  }
+  .about-content-paragraph {
+    margin: 0.3rem auto;
+  }
+  .about-content-paragraph p {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  .about-content-paragraph p::first-letter {
+    font-size: 2.5rem;
+  }
+  .section-2 {
+    height: auto;
+  }
+  .driver-content {
+    width: 100%;
+    padding: 0 !important;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 327px) {
+  .logo-driver span {
+    font-size: 1.3rem !important;
+  }
+  .logo-driver span:nth-child(1) {
+    font-size: 3.2rem !important;
+  }
+
+  .logo-driver span:nth-child(4) {
+    font-size: 4.2rem !important;
+  }
+  .driver-content .driver-h1 {
+    font-size: 3.5rem !important;
+    padding-bottom: 0.8rem;
+  }
+
+  .driver-paragraph {
+    font-size: 2rem !important;
+    line-height: 2.8rem !important;
+  }
+  .heading {
+    font-size: 2.2rem;
+  }
+  .about-content {
+    padding: 2rem 3rem;
+  }
+  .about-content-paragraph {
+    margin: 2px auto;
+  }
+  .about-content-paragraph p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .about-content-paragraph p::first-letter {
+    font-size: 2.2rem;
+  }
+  .section-2 {
+    height: auto;
+  }
+  .header-content .header-paragraph {
+    display: inline-block;
+    line-height: 2rem;
+  }
+  .header-content .header-heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 287px) {
+  .driver-content .driver-h1 {
+    font-size: 3rem !important;
+    padding-bottom: 0rem !important;
+    margin: auto;
+  }
+
+  .driver-paragraph {
+    font-size: 1.8rem !important;
+    line-height: 3rem !important;
+    margin: aut0;
+    padding: 0 !important;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .about-content-paragraph {
+    margin: 1px auto;
+  }
+  .about-content-paragraph p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+  .about-content {
+    padding: 2rem 3rem;
+  }
+  .header-content .header-paragraph {
+    display: inline-block;
+    line-height: 2.5rem;
+  }
+  .header-content .header-heading {
+    font-size: 3rem;
+  }
+  .logo-driver {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    left: 5 !important;
+    right: 0 !important;
+    width: 60% !important;
+  }
+  .rider-span {
+    margin: auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .rider-form {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    left: 0% !important;
+    right: 10% !important;
+    color: white;
+    margin: auto !important;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 257px) {
+  .logo-driver {
+    width: 70% !important;
+  }
+  .driver-content .driver-h1 {
+    font-size: 2.5rem !important;
+  }
+  .driver-paragraph {
+    font-size: 1.5rem !important;
+  }
+}

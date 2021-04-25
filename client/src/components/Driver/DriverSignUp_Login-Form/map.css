@@ -1,0 +1,160 @@
+#scrollbar {
+  width: 93%;
+  height: 25rem;
+  border: 1px solid white;
+  overflow: auto;
+  border: none;
+  margin: 3rem auto;
+}
+#scrollbar::-webkit-scrollbar {
+  width: 1rem;
+}
+#scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ba8b02; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #181818,
+    #ba8b02
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #181818,
+    #ba8b02
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ffd89b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #19547b,
+    #ffd89b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #19547b,
+    #ffd89b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.scrollbar-item {
+  margin: 1rem 0.5rem;
+}
+.accordion-item {
+  margin: 1rem auto;
+}
+.accordion-item .accordion-title {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
+.accordion-item .accordion-title i {
+  font-size: 1.8rem;
+  color: lightblue;
+  margin: auto 0.2rem;
+}
+.accordion-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+  flex-direction: column;
+}
+.accordion-content p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+}
+.old-journey-btn {
+  margin: 0.5rem auto;
+}
+.old-journey-btn button {
+  outline: none;
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.old-journey-btn button:focus {
+  color: grey;
+  background-color: transparent;
+  border: 2px solid crimson;
+}
+.old {
+  margin: 2rem 2rem;
+  color: lightblue;
+  font-size: 2rem;
+  font-style: oblique;
+  border-radius: 8rem;
+  border-bottom: 2px dashed var(--danger-color);
+  border-top: 2px dashed var(--danger-color);
+  padding: 0.5rem 1rem;
+}
+.sign-back {
+  font-size: 1.5rem;
+  border: 1px solid crimson;
+  background-color: transparent;
+  padding: 0.9rem 1rem;
+  color: crimson;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
+  margin-right: 8rem;
+}
+.sign-back:hover {
+  transform: scale(1.2);
+  color: white;
+  background-color: crimson;
+}
+.confirm-button {
+  display: inline-block;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.success-login {
+  font-size: 2rem;
+  background-color: green;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  margin: auto 0.5rem;
+}
+.success-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.5rem;
+}
+.del-button {
+  background-color: var(--danger-color);
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.del-button:hover {
+  background-color: var(--danger-color);
+  box-shadow: 0.8rem 0.8rem 1rem var(--white-color),
+    -0.8rem -0.8rem 1rem var(--white-color);
+  text-shadow: 0.8rem 0.8rem 1rem var(--white-color),
+    -0.8rem -0.8rem 1rem var(--white-color);
+}

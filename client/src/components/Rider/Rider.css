@@ -1,0 +1,540 @@
+.rider-background {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://images.pexels.com/photos/1386649/pexels-photo-1386649.jpeg?cs=srgb&dl=pexels-peter-fazekas-1386649.jpg&fm=jpg);
+  background-attachment: fixed;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.rider-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  left: 2%;
+  padding: 4rem 3rem;
+  border-radius: 2rem;
+  top: 40%;
+  text-shadow: 0.7rem 0.2rem 0.4rem black;
+  line-height: 4rem;
+}
+.driver-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  left: 2%;
+  padding: 4rem 3rem;
+  border-radius: 2rem;
+  top: 40%;
+  text-shadow: 0.7rem 0.2rem 0.4rem black;
+  line-height: 4rem;
+}
+.rider-h1 {
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.rider-paragraph {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.rider-span {
+  position: absolute;
+  width: auto;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  top: 9rem;
+  right: 10%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+  border-radius: 5rem;
+}
+
+.form-sigup {
+  margin-right: 2rem;
+}
+.form-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 4rem;
+  top: 18rem;
+  width: 50rem;
+  height: 40rem;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 5rem;
+  background: linear-gradient(rgba(178, 183, 186, 0.4), rgba(17, 17, 17, 0.483)),
+    url(../img/Black.png);
+  background-size: contain;
+  object-fit: fill;
+  background-position: center;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.form-container-h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.bg-white {
+  color: wheat;
+  margin: 1rem 0 2rem 0;
+}
+.sign-btn {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 1rem;
+  color: green;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.sign-btn:hover {
+  transform: scale(1.2);
+  background-color: green;
+  color: white;
+}
+.form-control {
+  border-radius: 0.8rem;
+  border: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.form-control:focus {
+  border: none;
+  outline: none;
+}
+.signup-label {
+  font-size: 2rem;
+}
+
+.logo-rider {
+  position: absolute;
+  left: 50%;
+  background-color: var(--danger-color);
+  padding: 2rem 0.8rem 0.8rem 0.8rem;
+  display: inline-block;
+  border-radius: 0 0 2rem 2rem;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.logo-rider span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.5rem;
+}
+.logo-rider span:nth-child(1) {
+  font-size: 4rem;
+  color: wheat;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.logo-rider span:nth-child(4) {
+  border-radius: 0;
+  padding: 0;
+  font-size: 5rem;
+  color: wheat;
+  background-color: transparent;
+}
+
+.logo-rider span:nth-child(2) {
+  animation: drop-letters 3s 0.2s infinite;
+}
+
+.logo-rider span:nth-child(3) {
+  animation: drop-letters 3s 0.3s infinite;
+}
+
+.logo-rider span:nth-child(5) {
+  animation: drop-letters 3s 0.5s infinite;
+}
+
+.logo-rider span:nth-child(6) {
+  animation: drop-letters 3s 0.6s infinite;
+}
+
+.logo-rider span:nth-child(7) {
+  animation: drop-letters 3s 0.7s infinite;
+}
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rider-login {
+  margin: 2.5rem 0;
+  font-size: 2.5rem;
+}
+.login-submit {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: teal;
+  background-color: transparent;
+  border: 1px solid teal;
+  outline: none;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.login-submit:hover {
+  background-color: teal;
+  transform: scale(1.2);
+  color: white;
+}
+.rider-form-login {
+  margin-top: 5rem;
+}
+.form-signup {
+  margin-left: 7rem;
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+.form-signup label {
+  cursor: pointer;
+}
+.form-signup input[type='radio'] {
+  display: none;
+}
+.form-signup span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #eee;
+  position: absolute;
+  left: -40%;
+  top: 20%;
+  border-radius: 50%;
+}
+.form-signup:hover span {
+  background: #ccc;
+}
+.form-signup input:checked + span {
+  background-color: #2196fc;
+}
+.form-signup input:checked + span::after {
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 25%;
+  top: 23%;
+}
+@media only screen and (max-width: 1200px) {
+  /* Driver */
+  .driver-background {
+    background-attachment: fixed;
+    height: 195vh !important;
+    position: relative !important;
+  }
+
+  /* Rider */
+  .rider-background {
+    height: 220vh;
+    position: relative;
+    background-size: cover;
+  }
+  .rider-background .rider-content {
+    position: absolute;
+    top: 23%;
+    left: 12%;
+    width: 80%;
+    margin: auto;
+  }
+  .rider-span {
+    position: absolute;
+    top: 8rem;
+  }
+  .driver-form {
+    position: absolute !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 80% !important;
+    height: 20% !important;
+    flex-wrap: wrap !important;
+    right: 5% !important;
+    left: 5% !important;
+    margin: auto !important;
+    bottom: 0;
+  }
+  .form-container-driver {
+    width: 100%;
+    height: 100%;
+    position: unset !important;
+  }
+  .rider-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 70%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .form-container {
+    max-width: 80rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .form-group {
+    margin: 3.5rem auto;
+  }
+  .form-group label {
+    font-size: 2.5rem;
+  }
+  .form-control {
+    height: 4rem;
+  }
+  .rider-login label {
+    font-size: 3rem;
+  }
+  .form-container-h1 {
+    font-size: 5rem;
+    font-style: oblique;
+    letter-spacing: 0.5rem;
+  }
+  .rider-h1 {
+    font-size: 7rem;
+    letter-spacing: 0.8rem;
+  }
+  .login-submit {
+    font-size: 2.5rem;
+  }
+  .rider-paragraph {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .rider-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 70%;
+    width: 100%;
+    margin: auto;
+  }
+  .form-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 939px) {
+  .rider-h1 {
+    font-size: 6rem;
+  }
+  .rider-paragraph {
+    font-size: 3.4rem;
+  }
+  .form-container-h1 {
+    font-size: 4rem;
+  }
+  .rider-login label {
+    font-size: 2.8rem;
+  }
+  .login-submit {
+    font-size: 3.5rem;
+  }
+  .form-control {
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rider-content {
+    width: 80% !important;
+    margin: auto;
+  }
+  .rider-h1 {
+    font-size: 4rem;
+  }
+  .rider-paragraph {
+    font-size: 3.2rem;
+  }
+  .rider-form {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    left: 100%;
+
+    color: white;
+  }
+  .signup-label {
+    font-size: 1.8rem;
+  }
+  .form-control {
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  /* driver */
+  .driver-background {
+    height: 130vh;
+  }
+  /* Rider */
+  .rider-background {
+    height: 130vh;
+  }
+  .form-group {
+    margin: 2rem auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .rider-h1 {
+    font-size: 3rem;
+  }
+
+  .rider-paragraph {
+    font-size: 2.9rem !important;
+    text-shadow: 0.3rem 0.1rem 0.4rem black;
+  }
+  .form-group {
+    margin: 2rem auto;
+  }
+  .form-container-h1 {
+    font-size: 2rem;
+  }
+  .rider-login {
+    font-size: 1.5rem;
+  }
+  .rider-paragraph {
+    font-size: 1.2rem;
+  }
+  .rider-form {
+    position: absolute;
+    margin-bottom: 1rem !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    bottom: 60% !important;
+    color: white;
+  }
+  .form-container {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    right: 0;
+  }
+  .form-group label {
+    font-size: 1.5rem !important;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .form-container {
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+  .rider-content {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rider-span {
+    display: flex;
+    flex-direction: row;
+    top: 7rem !important;
+    margin: auto 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+  .driver-span {
+    padding-top: 7rem;
+    margin: auto 10%;
+  }
+  .rider-form {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+  }
+  .rider-h1 {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+  .rider-paragraph {
+    font-size: 2.5rem !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .rider-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .driver-content .driver-h1 {
+    font-size: 3rem;
+  }
+}

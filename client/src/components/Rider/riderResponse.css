@@ -1,0 +1,365 @@
+@media only screen and (max-width: 1350px) {
+  /* left Sidebar */
+
+  .personal-section .name {
+    font-size: 1.2rem;
+  }
+  .profile {
+    width: 5rem;
+  }
+  .status {
+    margin: 3rem auto;
+  }
+  .status-span {
+    font-size: 1.2rem;
+  }
+  .id {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .status-label {
+    font-size: 1.7rem;
+  }
+  .id .id-label {
+    font-size: 1.7rem;
+  }
+  .id .id-email {
+    font-size: 1.3rem;
+  }
+  .Date-span .Date-label {
+    font-size: 1.7rem;
+  }
+  .Date-span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  .date {
+    font-size: 1.5rem;
+  }
+  /* Right Sidebar */
+  .request-header {
+    font-size: 1.7rem;
+  }
+  /* Driver */
+  .driver-background {
+    height: 180vh;
+    overflow: hidden;
+  }
+  .driver-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    left: 5%;
+    right: 5%;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    top: 25%;
+    text-shadow: 0.4rem 0.2rem 0.4rem black;
+    margin: auto;
+  }
+  .driver-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    left: 5%;
+    right: 5%;
+    top: 45% !important;
+    height: 36%;
+    flex-wrap: wrap;
+  }
+  .form-container-driver {
+    width: 100%;
+    height: 100%;
+  }
+  .driver-h1 {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .driver-paragraph {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    line-height: 4rem;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  /* Driver */
+  .driver-background {
+    height: 150vh;
+  }
+  .driver-content {
+    top: 25%;
+  }
+  /* Left Sidebar */
+  .logo-rider span {
+    font-size: 1.2rem;
+  }
+
+  .logo-rider span:nth-child(1) {
+    font-size: 3rem;
+  }
+  .logo-rider span:nth-child(4) {
+    font-size: 3rem;
+  }
+  .personal-section .name {
+    font-size: 1rem;
+  }
+  .rider-background {
+    height: 200vh;
+  }
+  .profile {
+    width: 4rem;
+    height: 4rem;
+  }
+  .status {
+    margin: 3rem auto;
+  }
+  .status-span {
+    font-size: 1rem;
+  }
+
+  .id {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .status-label {
+    font-size: 1.5rem;
+  }
+  .id .id-label {
+    font-size: 1.5rem;
+  }
+  .id .id-email {
+    font-size: 1rem;
+  }
+  .Date-span .Date-label {
+    font-size: 1.5rem;
+  }
+  .Date-span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  .date {
+    font-size: 1.2rem;
+  }
+  /* Right Sidebar */
+  .request-header {
+    font-size: 1.2rem;
+  }
+  /* Rider */
+  .rider-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 70%;
+    left: 5%;
+    right: 5%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .left-sidebar {
+    width: 25%;
+    z-index: 1;
+  }
+  .right-sidebar {
+    width: 25%;
+    z-index: 1;
+  }
+  .Map {
+    width: 50%;
+    z-index: 1;
+    left: 26%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .left-sidebar {
+    animation: 0.5s width-expand backwards;
+    z-index: 0;
+    display: none;
+  }
+  .driver-h1 {
+    font-size: 4.5rem;
+  }
+  .driver-paragraph {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+  }
+  .left .left-sidebar {
+    animation: 0.5s width-expand forwards;
+    z-index: 3;
+    display: flex;
+  }
+  .right-sidebar {
+    animation: 0.5s width-expand backwards;
+    z-index: 0;
+    display: none;
+  }
+  .right .right-sidebar {
+    animation: 0.5s width-expand forwards;
+
+    z-index: 10;
+    display: flex;
+  }
+  /* Welcome Rider */
+  .rider-h1 {
+    font-size: 6rem;
+  }
+  .form-group label {
+    font-size: 2rem;
+  }
+  .form-control {
+    width: 50%;
+  }
+  .Map {
+    width: 100vw !important;
+    z-index: 1;
+    left: 0;
+    height: calc(100vh - 4rem);
+  }
+  .map-footer {
+    display: flex;
+  }
+  .right-section .right-close {
+    display: inline-block;
+  }
+  .personal-section .left-close {
+    display: inline-block;
+  }
+  .Riderinfo {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: relative;
+  }
+  .rider-span {
+    top: 10rem;
+  }
+  @keyframes width-expand {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 30rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .rider-background {
+    height: 180vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .driver-content .driver-h1 {
+    font-size: 4;
+  }
+  .driver-content .driver-paragraph {
+    font-size: 2rem;
+  }
+  .map-geocoder .react-geocoder {
+    position: absolute;
+    top: 9rem;
+    left: 3rem;
+  }
+  .left-sidebar {
+    animation: 0.5s width-expand backwards;
+    z-index: 0;
+    display: none;
+  }
+
+  .left .left-sidebar {
+    animation: 0.5s width-expand forwards;
+    z-index: 3;
+    display: flex;
+    padding-top: 4rem;
+  }
+  .right-sidebar {
+    animation: 0.5s width-expand backwards;
+    z-index: 0;
+    display: none;
+  }
+  .right .right-sidebar {
+    animation: 0.5s width-expand forwards;
+    padding-top: 4rem;
+
+    z-index: 8;
+    display: flex;
+  }
+  .Map {
+    width: 100vw !important;
+    z-index: 1;
+    left: 0;
+  }
+  .map-footer {
+    display: flex;
+  }
+  .right-section .right-close {
+    display: inline-block;
+  }
+  .personal-section .left-close {
+    display: inline-block;
+  }
+  .Riderinfo {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: relative;
+  }
+  .form-group {
+    margin: 1.6rem auto;
+  }
+  .form-group label {
+    font-size: 1.6rem;
+  }
+  .form-control {
+    height: 2.5rem;
+  }
+  .rider-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 65%;
+    left: 5%;
+    right: 5%;
+  }
+  .login-submit {
+    font-size: 2.3rem;
+  }
+
+  @keyframes width-expand {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 40vw;
+    }
+  }
+}
